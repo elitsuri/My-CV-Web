@@ -1,0 +1,131 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300";
+
+body {
+  background: linear-gradient(90deg, rgb(202, 199, 206), rgb(248, 246, 246), rgb(202, 199, 206));
+}
+
+#exp-container {
+  margin: 5vh 10vw;
+
+
+
+    padding-bottom: 20vh;
+}
+
+.link {
+  color: rgb(69, 39, 204);
+  border-bottom: dashed rgb(32, 32, 196) 2px;
+  font-weight: bold;
+}
+
+section {
+    margin-top: 10vh;
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: rebeccapurple 1px solid;
+
+}
+
+.link-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.role {
+    width: 100%;
+    /* border: black solid 5px; */
+    border-radius: 10px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    /* border: rebeccapurple 2px solid; */
+}
+
+
+.title-side {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.details-side {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    /* border: red solid 3px; */
+    padding: 2vh 3vw;
+}
+
+
+.exp_thumbnail > img,
+.exp_thumbnail a > img {
+  /*width: 100%;*/
+  /*height: auto;*/
+  border-radius: 10px;
+}
+
+.title {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 1vw;
+    align-items: center;
+
+}
+
+
+.exp_thumbnail {
+    flex: 1;
+    width: calc(60px + 5vw);
+    height: auto;
+    padding: 2vh 1vw;
+    min-width: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    /* border: rgb(50, 98, 168) solid 2px; */
+    background: transparent;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+         -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+  }
+
+
+  p {
+    font-size: calc(12px + 1vw) ;
+    color: rgb(89, 37, 156);
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+  }
+
+  h1 {
+    font-size: calc(10px + 1vw) ;
+    color: rgb(89, 37, 156);
+
+    font-family: 'Lato', Arial, sans-serif;
+    font-style: normal;
+  }
+  h2 {
+    font-size: calc(10px + 1vw) ;
+    color: rgb(89, 37, 156);
+
+    font-family: 'Lato', Arial, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+
+  }
+
+  .workplace-brief {
+    font-size: calc(10px + 1vw) ;
+    color: rgb(105, 60, 163);
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+  }

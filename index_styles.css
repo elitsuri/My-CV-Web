@@ -1,0 +1,318 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400";
+
+
+
+.navbar-slide-down {
+    animation: slide_down 0.4s ease;
+}
+
+
+#head-h1 {
+    font-size: calc(17px + 1.5vw) ;
+    animation: slide_up 0.8s ease;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+#head-h3 {
+    font-size: calc(12px + 1.2vw) ;
+    animation: slide_up 0.9s ease;
+    animation-delay: 0.1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+#about-me-text {
+    padding-right: 20vw;
+    margin-bottom: 20px;
+}
+
+h4 {
+    line-height: 1.5em;
+}
+
+
+.head-section {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #23D5AB, #23A6D5, #E73C7E, #EE7752);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+
+}
+
+.about-section {
+    width: 100%;
+    background: black 1px solid;
+    padding: 10vh 10vw;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.about-brief-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 14vw;
+    padding-right: 20vw;
+    margin-top: 20vmin;
+}
+
+.feature-container {
+    margin-bottom: 7vmin;
+}
+
+.grid-container {
+    grid-auto-rows: 1fr;
+}
+
+.feature-columns-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#spacer-right {
+    padding-right: 4em;
+}
+
+.feature-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.feature-tile {
+    display: flex;
+    flex-direction: row;
+}
+
+.teaser-section {
+    width: 100%;
+    background: #4DADD4;
+    display: flex;
+    flex-direction: row;
+    padding: 3vh 3vw;
+
+}
+
+.teaser-button {
+
+
+
+    background-color: #E73C7E; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 3vmin 3vmin;
+    text-align: start;
+    text-decoration: none;
+    display: inline-block;
+    font-size: calc(12px + 1.2vw);
+    align-self: start;
+}
+
+.teaser-button:hover {
+    color: white;
+}
+
+.teaser-image {
+    flex: 3;
+    align-self: center;
+    display: block;
+    padding: 10vmin;
+    line-height: 1.42857143;
+    background: transparent;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+         -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+}
+
+.teaser-image > img,
+.teaser-image a > img {
+    display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 12px;
+  transition: .5s ease;
+}
+
+.teaser-text-container {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3vw;
+
+}
+
+.teaser-text-h3 {
+    color: white;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: calc(12px + 1.2vw) ;
+}
+
+.teaser-text-h1 {
+    color: white;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: calc(17px + 1.5vw);
+}
+
+#plus {
+    color: rgb(131, 131, 185);
+    margin-right: 20px;
+}
+
+.about-feature-title {
+    margin-bottom: 40px;
+    color: rgb(60, 60, 196);
+}
+
+h4 > a,
+h4 > a:hover,
+h4 > a:focus {
+    color: black;
+    border-bottom: rgb(60, 60, 196) 2px dashed;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+
+.work:hover .about-feature-title .icon-container > img {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: drive 1.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1;
+  }
+
+  .contact:hover .about-feature-title .icon-container > img {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: fly 1.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  .skills:hover .about-feature-title .icon-container > img {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: rotate-center 2s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1;
+  }
+
+
+
+
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes slide_up {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes slide_down {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+
+
+    }
+}
+
+
+
+
+
+@keyframes fly {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+  @keyframes drive {
+    0% { transform: translate(200px, 0); }
+    10% { transform: translate(180px, 0); }
+    20% { transform: translate(160px, 0); }
+    30% { transform: translate(140px, 0); }
+    40% { transform: translate(120px, 0); }
+    50% { transform: translate(100px, 0); }
+    60% { transform: translate(80px, 0); }
+    70% { transform: translate(60px, 0); }
+    80% { transform: translate(40px, 0); }
+    90% { transform: translate(20px, 0); }
+    100% { transform: translate(0, 0); }
+
+  }
+
+
+
+  @keyframes rotate-center {
+    0%{
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100%{
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
