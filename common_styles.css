@@ -3,6 +3,10 @@
     .navbar-header {
         float: none;
     }
+    .navbar-slide-down
+{
+    animation: slide_down 0.4s ease;
+}
     .navbar-left,.navbar-right {
         float: none !important;
     }

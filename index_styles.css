@@ -1,20 +1,21 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400";
 
-
-
-.navbar-slide-down {
+.navbar-slide-down
+{
     animation: slide_down 0.4s ease;
 }
 
 
-#head-h1 {
+#head-h1
+{
     font-size: calc(17px + 1.5vw) ;
     animation: slide_up 0.8s ease;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
 }
-#head-h3 {
+#head-h3
+{
     font-size: calc(12px + 1.2vw) ;
     animation: slide_up 0.9s ease;
     animation-delay: 0.1s;
@@ -25,17 +26,20 @@
     font-style: normal;
 }
 
-#about-me-text {
+#about-me-text
+{
     padding-right: 20vw;
     margin-bottom: 20px;
 }
 
-h4 {
+h4
+{
     line-height: 1.5em;
 }
 
 
-.head-section {
+.head-section
+{
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -46,7 +50,8 @@ h4 {
 
 }
 
-.about-section {
+.about-section
+{
     width: 100%;
     background: black 1px solid;
     padding: 10vh 10vw;
@@ -56,7 +61,8 @@ h4 {
 
 }
 
-.about-brief-container {
+.about-brief-container
+{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -65,7 +71,8 @@ h4 {
     margin-top: 20vmin;
 }
 
-.feature-container {
+.feature-container
+{
     margin-bottom: 7vmin;
 }
 
@@ -73,7 +80,8 @@ h4 {
     grid-auto-rows: 1fr;
 }
 
-.feature-columns-container {
+.feature-columns-container
+{
     display: flex;
     flex-direction: row;
 }
@@ -93,7 +101,8 @@ h4 {
     flex-direction: row;
 }
 
-.teaser-section {
+.teaser-section
+{
     width: 100%;
     background: #4DADD4;
     display: flex;
@@ -102,10 +111,8 @@ h4 {
 
 }
 
-.teaser-button {
-
-
-
+.teaser-button
+{
     background-color: #E73C7E; /* Green */
     border: none;
     border-radius: 10px;
@@ -274,7 +281,8 @@ button {
 
 
 
-@keyframes fly {
+@keyframes fly
+{
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -286,10 +294,9 @@ button {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-
-  @keyframes drive {
+}
+@keyframes drive
+{
     0% { transform: translate(200px, 0); }
     10% { transform: translate(180px, 0); }
     20% { transform: translate(160px, 0); }
@@ -301,18 +308,18 @@ button {
     80% { transform: translate(40px, 0); }
     90% { transform: translate(20px, 0); }
     100% { transform: translate(0, 0); }
-
   }
 
-
-
-  @keyframes rotate-center {
-    0%{
+@keyframes rotate-center
+{
+    0%
+    {
       -webkit-transform: rotate(0);
       transform: rotate(0);
     }
-    100%{
+    100%
+    {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
-  }
+}
