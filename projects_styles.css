@@ -1,17 +1,22 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300";
 body {
     background: rgb(243, 242, 242);
-
-
 }
 
-a:hover, a:visited, a:link, a:active {
+.content_container
+{
+    float: left;
+}
+
+a:hover, a:visited, a:link, a:active
+{
     color: black;
 }
 
 
 .proj_thumbnail > img,
-.proj_thumbnail a > img {
+.proj_thumbnail a > img
+{
     display: block;
   max-width: 100%;
   margin-right: auto;
@@ -20,41 +25,47 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .proj_thumbnail:hover > img,
-.proj_thumbnail:hover a > img {
+.proj_thumbnail:hover a > img
+{
     opacity: 0.3;
 }
 
 
-.proj_thumbnail {
+.proj_thumbnail
+{
     display: block;
     margin-bottom: 20px;
     line-height: 1.42857143;
     -webkit-transition: border .2s ease-in-out;
          -o-transition: border .2s ease-in-out;
             transition: border .2s ease-in-out;
-  }
+}
 
 
-  #projects-content-container {
+#projects-content-container
+{
       margin-top: 100px;
       padding-right: 10vw;
       padding-left: 10vw;
-  }
+}
 
-  #projects-content-header {
+#projects-content-header
+{
     font-size: 40px;
     font-family: 'GidoleRegular';
     font-weight: lighter;
     font-style: normal;
     margin-bottom: 10vh;
-  }
+}
 
-  section {
-      height: 0.8vh
-  }
+section
+{
+    height: 0.8vh
+}
 
 
-  .isDisabled {
+.isDisabled
+{
     color: currentColor;
     cursor: not-allowed;
     opacity: 1;
@@ -67,7 +78,8 @@ a:hover, a:visited, a:link, a:active {
   }
 
 
-#outer_anim_container{
+#outer_anim_container
+{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -77,7 +89,8 @@ a:hover, a:visited, a:link, a:active {
     animation: anim_slide_out 1s ease 2.7s forwards;
     background: linear-gradient(0deg, rgb(47, 51, 70), rgb(32, 35, 48), rgb(32, 6, 48), rgb(9, 1, 24));
 }
-#inner_anim_container{
+#inner_anim_container
+{
     position: relative;
     display: flex;
     flex: 1;
@@ -96,78 +109,78 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
-
-
-
-#content_container {
+#content_container
+{
     position: absolute;
     width: 100%;
     height: 100vh;
     display: none;
 }
 
-#logo {
+#logo
+{
     position: absolute;
     height: 100%;
     width: 100%;
     animation: fill 0.5s ease forwards 2.2s;
-
 }
 
 
-#logo path:nth-child(1) {
+#logo path:nth-child(1)
+{
     stroke-dasharray: 449.7px;
     stroke-dashoffset: 449.7px;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(2) {
+#logo path:nth-child(2)
+{
     stroke-dasharray: 549px;
     stroke-dashoffset: 549px;
     animation: line-anim 2s ease forwards 0.1s;
 
 }
 
-#logo path:nth-child(3) {
+#logo path:nth-child(3)
+{
     stroke-dasharray: 565.9px;
     stroke-dashoffset: 565.9px;
     animation: line-anim 2s ease forwards 0.2s;
-
 }
 
-#logo path:nth-child(4) {
+#logo path:nth-child(4)
+{
     stroke-dasharray: 312.8px;
     stroke-dashoffset: 312.8px;
     animation: line-anim 2s ease forwards 0.3s;
-
 }
 
-#logo path:nth-child(5) {
+#logo path:nth-child(5)
+{
     stroke-dasharray: 464px;
     stroke-dashoffset: 464px;
     animation: line-anim 2s ease forwards 0.4s;
-
 }
 
-#logo path:nth-child(6) {
+#logo path:nth-child(6)
+{
     stroke-dasharray: 508.5px;
     stroke-dashoffset: 508.5px;
     animation: line-anim 2s ease forwards 0.5s;
-
 }
 
-#logo path:nth-child(7) {
+#logo path:nth-child(7)
+{
     stroke-dasharray: 336.672px;
     stroke-dashoffset: 336.672px;
     animation: line-anim 2s ease forwards 0.6s;
-
 }
 
-#logo path:nth-child(8) {
+#logo path:nth-child(8)
+{
     stroke-dasharray: 493.9px;
     stroke-dashoffset: 493.9px;
     animation: line-anim 2s ease forwards 0.7s;
-
 }
 
 
@@ -198,9 +211,8 @@ a:hover, a:visited, a:link, a:active {
     }
 }
 
-
-
-.overlay {
+.overlay
+{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -211,13 +223,15 @@ a:hover, a:visited, a:link, a:active {
     transition: .5s ease;
     background-color: #008CBA;
     margin-bottom: 20px;
-  }
+}
 
-  .proj_thumbnail:hover .overlay {
+.proj_thumbnail:hover .overlay
+{
     opacity: 1;
-  }
+}
 
-  .text {
+.text
+{
     color: white;
     font-size: calc(10px + 3vmin);
     position: absolute;
@@ -229,21 +243,25 @@ a:hover, a:visited, a:link, a:active {
     text-align: center;
   }
 
-  .text h1 {
+.text h1
+{
     font-size: calc(10px + 3vmin);
 }
 
-.text h2 {
+.text h2
+{
     font-size: calc(8px + 2.5vmin);
 }
 
-.text h3 {
+.text h3
+{
     font-size: calc(6px + 2vmin);
 }
 
-  .text > a,
-  .text h3 > a {
+.text > a,
+.text h3 > a
+{
     color: white;
     font-size: calc(6px + 2vmin);
 
-  }
+}

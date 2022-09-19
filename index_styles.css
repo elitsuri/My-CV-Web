@@ -3,9 +3,21 @@
 .navbar-slide-down
 {
     animation: slide_down 0.4s ease;
+    display: flex;
+
+}
+.navbar-slide-down: hover
+{
+    background: #fff;
+    color: blue
 }
 
-
+nav navbar-nav navbar-right
+{
+    list-style: none;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
 #head-h1
 {
     font-size: calc(17px + 1.5vw) ;
@@ -125,7 +137,7 @@ h4
     align-self: start;
 }
 
-.teaser-button:hover {
+.teaser-button: hover {
     color: white;
 }
 
@@ -235,8 +247,6 @@ button {
 
 
 
-
-
 @keyframes change {
     0% {
         background-position: 0 50%;
@@ -276,9 +286,6 @@ button {
 
     }
 }
-
-
-
 
 
 @keyframes fly
